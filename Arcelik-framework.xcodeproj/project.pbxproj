@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2E7DD76026453D78006BAEC8 /* Arcelik_framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E7DD75E26453D78006BAEC8 /* Arcelik_framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E7DD76826453D8A006BAEC8 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7DD76726453D8A006BAEC8 /* Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E7DD75B26453D78006BAEC8 /* Arcelik_framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Arcelik_framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7DD75E26453D78006BAEC8 /* Arcelik_framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Arcelik_framework.h; sourceTree = "<group>"; };
 		2E7DD75F26453D78006BAEC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E7DD76726453D8A006BAEC8 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				2E7DD75E26453D78006BAEC8 /* Arcelik_framework.h */,
 				2E7DD75F26453D78006BAEC8 /* Info.plist */,
+				2E7DD76726453D8A006BAEC8 /* Test.swift */,
 			);
 			path = "Arcelik-framework";
 			sourceTree = "<group>";
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					2E7DD75A26453D78006BAEC8 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7DD76826453D8A006BAEC8 /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		2E7DD76426453D78006BAEC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7YCNB2UC52;
@@ -277,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mirror.Arcelik-framework";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +292,7 @@
 		2E7DD76526453D78006BAEC8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7YCNB2UC52;

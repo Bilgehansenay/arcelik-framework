@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+public struct Test{
+    
+    public static func sayMyName(name: String){
+        print(name)
+    }
+    
+    public static func checkTag(){
+        print("now it is 1")
+    }
+}

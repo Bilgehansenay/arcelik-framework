@@ -14,7 +14,13 @@ Pod::Spec.new do |spec|
   spec.description  = "Test description bla bla bla bla bla bla bla bla bla bla bla bla."
   
   spec.homepage     = "https://github.com/Bilgehansenay/arcelik-framework"
-  spec.license      = "MIT"
+
+  spec.license = { :type => 'MIT', :text => <<-LICENSE
+                   Copyright 2012
+                   Permission is granted to...
+                 LICENSE
+               }
+
   spec.author             = { "Bilgehan Senay" => "bilgehannnoe@gmail.com" }
   spec.platform     = :ios, "12.1"
   spec.source       = { :git => "https://github.com/Bilgehansenay/arcelik-framework.git", :tag =>  spec.version.to_s }
